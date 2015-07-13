@@ -1,0 +1,31 @@
+{
+  "name": "wc-starter",
+  "version": "1.0.0",
+  "description": "web component starter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aquei/wc-starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aquei/wc-starter/issues"
+  },
+  "homepage": "https://github.com/Aquei/wc-starter",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-header": "^1.2.2",
+    "gulp-inline-source": "^2.0.0",
+    "gulp-minify-html": "^1.0.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.3",
+    "gulp-uglify": "^1.2.0",
+    "gulp-uncache": "^0.4.0-beta1",
+    "gulp-webserver": "^0.9.1"
+  }
+}

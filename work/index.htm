@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<title>component test</title>
+		<script src="https://cdn.jsdelivr.net/classlist/2014.01.31/classList.min.js"></script>
+		<!--[if IE]>
+		<script src="https://cdn.jsdelivr.net/classlist/2014.01.31/classList.min.js"></script>
+		<![endif]--><!--[if lt IE 9]>
+		<script src="https://cdn.jsdelivr.net/es5.shim/4.1.5/es5-shim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/es5.shim/4.1.5/es5-sham.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<script>!function(){"use strict";var e;e=new window.Image,"srcset"in e&&"sizes"in e&&"currentSrc"in e||document.write('<script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js" defer async><\/script>'),"registerElement"in document&&"createShadowRoot"in HTMLElement.prototype&&"import"in document.createElement("link")&&"content"in document.createElement("template")||document.write('<script src="https://cdn.jsdelivr.net/webcomponentsjs/latest/webcomponents.min.js"><\/script>')}();</script>
+
+				<style>
+					body{
+						background-color:grey;
+					}
+
+					#testerOuter{
+						background-color:white;
+						display:block;
+						margin:0 auto;
+						max-width:1600px;
+					}
+					img{
+						max-width:100%;
+					}
+				</style>
+				<link href="./imgresp.html" rel="import">
+			</head>
+
+
+			<body>
+				<div id="testerOuter">
+					<!-- component here -->
+					<img is="img-resp" data-src="http://www.gamespark.jp/imgs/ogp_f/109907.jpg" max-width="500" sizes="280px">
+				</div>
+			</body>
+		</html>
+
