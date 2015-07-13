@@ -6,7 +6,8 @@
 		, ImgResp;
 
 	
-	Proto.createdCallback = createdCallback; 
+	Proto.createdCallback = createdCallback;
+	Proto.attributeChangedCallback = attributeChangedCallback;
 	Proto.update = update;
 
 	//arg1 String - URL, arg2 Number - maxWidth, arg3 Number - quality = 50
@@ -38,7 +39,13 @@
 		return this;
 	}
 
-		
+
+	function attributeChangedCallback(attrName, oldVal, newVal){
+		if((attrName === "data-src" || attrName === "max-width") && newVal){
+			this.update(true);
+		}
+	}
+			
 
 	function srcsetSupportCheck(){
 		var e = new window.Image;
